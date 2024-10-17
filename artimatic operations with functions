@@ -1,0 +1,26 @@
+#include <stdio.h>
+int addnum(int m,int n)
+{
+    int sum=m+n;
+    return sum;
+}
+int main()
+{
+    int a=10,b=20;
+    printf("\nthe sum is %d",addnum(a,b));
+    printf("\nthe sub is %d",subnum(a,b));
+    printf("\nthe mul is %d",mulnum(a,b));
+    addnum(2,3);
+    return 0;
+
+}
+int subnum(int x,int y)
+{
+    int sub=x-y;
+    return sub;
+}
+int mulnum(int p,int q)
+{
+    int mul=p*q;
+    return mul;
+}
