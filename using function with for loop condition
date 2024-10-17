@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+void star(int n)
+{
+    for(int i=n;i>=1;i--)
+    {
+        for (int j=1;j<=i;j++)
+        {
+
+            printf("*");
+
+        }
+
+        printf("\n");
+
+    }
+
+}
+void hash(int n)
+{
+    for(int i=n;i>=1;i--)
+    {
+        for (int j=1;j<=i;j++)
+        {
+
+            printf("#");
+
+        }
+
+        printf("\n");
+
+    }
+
+}
+int main()
+{
+int a;
+int x;
+printf("Enter rows");
+scanf(" %d",&a);
+printf("What kind of patterns do you want:\n1.star\n2.hash:");
+scanf("%d",&x);
+if(x==1)
+{
+   star(a);
+
+}
+else if(x==2)
+{
+   hash(a);
+}
+return 0;
+}
